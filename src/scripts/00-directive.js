@@ -110,7 +110,7 @@ app.directive('ngSocialButtons', ['$compile', '$q', '$parse', '$http', '$locatio
                 this.makeUrl = function (url, context) {
                     return template(url, context, encodeURIComponent);
                 };
-                return this;
+                angular.extend(this, ctrl);
             }]
         };
     }
